@@ -16,7 +16,8 @@ def main():
     is_button_pushed = False
     
     # Arduinoのシリアルポートを開く
-    ser = serial.Serial('/dev/tty.usbmodem2201', 115200)
+    #ser = serial.Serial('/dev/tty.usbmodem2201', 115200)
+    ser = serial.Serial('/dev/tty.AtomLite', 9600)
     time.sleep(2) # Arduinoがリセットされるのを待つ
 
     while True:
